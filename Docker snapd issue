@@ -1,0 +1,7 @@
+https://stackoverflow.com/questions/51027327/ubuntu-18-04-var-lib-snapd-has-other-write-40777
+
+Ubuntu 18.04 /var/lib/snapd has 'other' write 40777
+
+Happened to me also. I changed the permissions of /var/lib/snapd from 777 to 755, so just do:
+
+sudo chmod -R 0755 /var/lib/snapd
