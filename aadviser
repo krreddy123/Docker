@@ -1,0 +1,13 @@
+https://github.com/google/cadvisor/issues/2387
+Error running cadvisor docker package on Ubuntu 18.04.4 LTS #2387
+
+=
+
+FYI, if you install docker w/ snap (on ubuntu 18.04), /var/lib/docker does not exists because docker is set up differently.
+To find the actual folder you need, run docker info | grep "Docker Root Dir:" (mine was /var/snap/docker/common/var-lib-docker).
+
+and my docker-compose file:
+
+  cadvisor:
+    volumes:
+      - /var/snap/docker/common/var-lib-docker:/var/lib/docker:ro
