@@ -1,0 +1,27 @@
+These are we are getting because of we need to switch docker from Linux to windows containers.
+
+C:\Users\Kondareddy.D\Downloads\docker\solr_server>docker build -t solrserver .
+[+] Building 7.4s (3/3) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                                                                                          0.0s
+ => => transferring dockerfile: 186B                                                                                                                                                                          0.0s
+ => [internal] load .dockerignore                                                                                                                                                                             0.0s
+ => => transferring context: 2B                                                                                                                                                                               0.0s
+ => ERROR [internal] load metadata for docker.io/winamd64/openjdk:11                                                                                                                                          7.3s
+------
+ > [internal] load metadata for docker.io/winamd64/openjdk:11:
+------
+failed to solve with frontend dockerfile.v0: failed to create LLB definition: no match for platform in manifest sha256:fbb964b8a6a1ca0984d81aee5c8d2ad06f1496b860ca4ddc75f75bd4a25c8204: not found
+
+===========
+
+C:\Users\Kondareddy.D\Downloads\docker\solr_server>docker build -t solrserver .
+[+] Building 7.4s (3/3) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                                                                                          0.0s
+ => => transferring dockerfile: 186B                                                                                                                                                                          0.0s
+ => [internal] load .dockerignore                                                                                                                                                                             0.0s
+ => => transferring context: 2B                                                                                                                                                                               0.0s
+ => ERROR [internal] load metadata for docker.io/winamd64/openjdk:11                                                                                                                                          7.3s
+------
+ > [internal] load metadata for docker.io/winamd64/openjdk:11:
+------
+failed to solve with frontend dockerfile.v0: failed to create LLB definition: no match for platform in manifest sha256:fbb964b8a6a1ca0984d81aee5c8d2ad06f1496b860ca4ddc75f75bd4a25c8204: not found
